@@ -14,11 +14,11 @@ auto-update: true
 # Should DeadChests be openable by other players or just the owner?
 #   > false - DeadChests can be opened by anyone.
 #   > true  - DeadChests can only be opened by the owner.
-OnlyOwnerCanOpenDeadChest: true
+OnlyOwnerCanOpenDeadChest: false
 
 # The amount of time a DeadChest will be active for (in seconds)...
 #   You can disable this limit by setting the value to 0.
-DeadChestDuration: 300
+DeadChestDuration: 3000
 
 # Should DeadChests be protected from explosions and other players?
 #   > false - DeadChests will not be protected and can be broken.
@@ -27,10 +27,10 @@ IndestructibleChest: true
 
 # The maximum number of DeadChests a player can have active at a time...
 #   You can disable this limit by setting the value to 0.
-maxDeadChestPerPlayer: 15
+maxDeadChestPerPlayer: 25
 
 # Should we notify the console when and where a DeadChest is created?
-logDeadChestOnConsole: false
+logDeadChestOnConsole: true
 
 # Should players require permission ('deadchest.generate') to generate a DeadChest?
 #   > false - Players will NOT require permission to generate a DeadChest.
@@ -67,10 +67,10 @@ DropMode: 1
 #   > 3 - BARREL
 #   > 4 - SHULKER BOX
 #   > 5 - ENDER CHEST
-DropBlock: 1
+DropBlock: 2
 
 # Store Player XP on Deadchest
-StoreXP: false
+StoreXP: true
 
 # % of XP stored on the deadchest. Only works if StoreXP is true
 # If 0 is used the all the XP from the player vanishes, no XP orb gets dropped on death and no XP gets stored
@@ -81,7 +81,7 @@ StoreXPPercentage: 100
 # Should we drop DeadChest contents when the timer expires?
 #   > false - DeadChest contents are removed when the timer expires.
 #   > true  - DeadChest contents are dropped when the timer expires.
-ItemsDroppedAfterTimeOut: false
+ItemsDroppedAfterTimeOut: true
 
 # Should generate a DeadChest on lava?
 GenerateOnLava: true
@@ -124,4 +124,5 @@ ExcludedItems:
 # Could be useful to provide support for customs items managed by other plugins
 IgnoredItems:
   - 'IGNORED_ITEM_EXAMPLE'
+  - 'Incendium Dragonscale Blade'
 

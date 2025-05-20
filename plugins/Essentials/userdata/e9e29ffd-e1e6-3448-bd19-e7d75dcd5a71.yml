@@ -16,18 +16,18 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1747759454839
-  login: 1747759335007
+  logout: 1747762752020
+  login: 1747761212999
 money: '0'
 last-account-name: nasu_chacha
 logoutlocation:
   world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
   world-name: nasu vally
-  x: -56.46440697538357
-  y: 68.0
-  z: 35.26484618867615
-  yaw: -26.999792098999023
-  pitch: 34.0500373840332
+  x: -125.28320505358538
+  y: 41.0
+  z: 46.999018371274246
+  yaw: 81.60015869140625
+  pitch: 13.800029754638672
 lastlocation:
   world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
   world-name: nasu vally
