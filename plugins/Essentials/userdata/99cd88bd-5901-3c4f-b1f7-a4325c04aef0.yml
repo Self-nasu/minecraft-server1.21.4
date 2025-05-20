@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 152.58.26.196
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1737994468348
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1747667653210
+  login: 1747667075153
+money: '0'
+last-account-name: Self_lakshh
+lastlocation:
+  world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
+  world-name: nasu vally
+  x: -82.98827405359759
+  y: 63.793573867168774
+  z: 127.1075909381641
+  yaw: 80.85198211669922
+  pitch: 9.000052452087402
+logoutlocation:
+  world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
+  world-name: nasu vally
+  x: 11.418992239183837
+  y: 159.9897238171668
+  z: 58.96887055614386
+  yaw: 107.20101928710938
+  pitch: 53.095638275146484

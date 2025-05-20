@@ -1,0 +1,10 @@
+name: nasu_chacha
+kits:
+  food:
+    cooldown: 1717662783491
+    one_time: false
+    bought: false
+  land:
+    cooldown: 1747674747784
+    one_time: false
+    bought: false

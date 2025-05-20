@@ -1,0 +1,803 @@
+[16:40:31] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.7+6-Ubuntu-0ubuntu124.04; Ubuntu null) on Linux 6.11.0-1014-azure (amd64)
+[16:40:31] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-228-ver/1.21.4@c2bb144 (2025-05-07T23:25:36Z) for Minecraft 1.21.4
+[16:40:32] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[16:40:33] [ServerMain/ERROR]: [DirectoryProviderSource] Error preparing plugin context: Directory 'plugins/SimpleCopperPipes-mc1.21.4-2.0.6.jar' failed to update!
+java.lang.RuntimeException: Directory 'plugins/SimpleCopperPipes-mc1.21.4-2.0.6.jar' failed to update!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:61) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.lambda$prepareContext$1(DirectoryProviderSource.java:33) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[?:?]
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133) ~[?:?]
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[?:?]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[?:?]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[?:?]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.walkFiles(DirectoryProviderSource.java:64) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:31) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.DirectoryProviderSource.prepareContext(DirectoryProviderSource.java:17) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.util.EntrypointUtil.registerProvidersFromSource(EntrypointUtil.java:14) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.PluginInitializerManager.load(PluginInitializerManager.java:113) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.Main.main(Main.java:111) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.PaperBootstrap.boot(PaperBootstrap.java:21) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.Main.main(Main.java:281) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paperclip.Paperclip.lambda$main$0(Paperclip.java:42) ~[app:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: org.bukkit.plugin.InvalidPluginException: java.lang.IllegalArgumentException: plugins/SimpleCopperPipes-mc1.21.4-2.0.6.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:141) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:59) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 22 more
+Caused by: java.lang.IllegalArgumentException: plugins/SimpleCopperPipes-mc1.21.4-2.0.6.jar does not contain a paper-plugin.yml or plugin.yml! Could not determine plugin type, cannot load a plugin from it!
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.getPluginName(FileProviderSource.java:150) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.checkUpdate(FileProviderSource.java:111) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.provider.source.FileProviderSource.prepareContext(FileProviderSource.java:59) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 22 more
+[16:40:33] [ServerMain/INFO]: [PluginInitializerManager] Initialized 27 plugins
+[16:40:33] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (27):
+ - ChestSort (14.1.0), ColoredSigns (6.2.1.212), CoordinatesHud (1.0), DeadChest (4.21.1), DecentHolograms (2.8.16), Essentials (2.20.1), EssentialsChat (2.20.1), FarmProtect (1.9.0), GSit (2.3.1), GameModeInventories (3.5.0), GriefPrevention (16.18.4), LuckPerms (5.4.102), PlaceholderAPI (2.11.6), PlayTime (3.6), PlayerKits2 (1.15.2), PluginConstructorAPI (1.0.50), SkinsRestorer (15.6.3), Sleep (1.0.8), TAB (5.2.0), TPA (1.0), TradeShop (2.6.1-STABLE), Vault (1.7.3-b131), ViaBackwards (5.0.0-SNAPSHOT), ViaRewind (4.0.1-SNAPSHOT), ViaVersion (5.3.2), WorldEdit (7.3.3+6788-6359df8), voicechat (2.5.30)
+[16:40:41] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[16:40:47] [ServerMain/INFO]: Loaded 1371 recipes
+[16:40:47] [ServerMain/INFO]: Loaded 1542 advancements
+[16:40:47] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[16:40:48] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 437.9ms
+[16:40:48] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[16:40:48] [Server thread/WARN]: ****************************
+[16:40:48] [Server thread/WARN]: YOU ARE RUNNING THIS SERVER AS AN ADMINISTRATIVE OR ROOT USER. THIS IS NOT ADVISED.
+[16:40:48] [Server thread/WARN]: YOU ARE OPENING YOURSELF UP TO POTENTIAL RISKS WHEN DOING THIS.
+[16:40:48] [Server thread/WARN]: FOR MORE INFORMATION, SEE https://madelinemiller.dev/blog/root-minecraft-server/
+[16:40:48] [Server thread/WARN]: ****************************
+[16:40:48] [Server thread/INFO]: Loading properties
+[16:40:48] [Server thread/INFO]: This server is running Paper version 1.21.4-228-ver/1.21.4@c2bb144 (2025-05-07T23:25:36Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[16:40:48] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[16:40:49] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[16:40:49] [Server thread/INFO]: Using 4 threads for Netty based IO
+[16:40:50] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[16:40:50] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[16:40:51] [Server thread/INFO]: Default game type: SURVIVAL
+[16:40:51] [Server thread/INFO]: Generating keypair
+[16:40:51] [Server thread/INFO]: Starting Minecraft server on *:25565
+[16:40:51] [Server thread/INFO]: Using epoll channel type
+[16:40:51] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[16:40:51] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[16:40:53] [Server thread/WARN]: [org.bukkit.craftbukkit.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[16:41:06] [Server thread/WARN]: Legacy plugin FarmProtect v1.9.0 does not specify an api-version.
+[16:41:06] [Server thread/WARN]: Legacy plugin TPA v1.0 does not specify an api-version.
+[16:41:06] [Server thread/WARN]: Legacy plugin PlayTime v3.6 does not specify an api-version.
+[16:41:06] [Server thread/INFO]: [SpigotLibraryLoader] [GameModeInventories] Loading 1 libraries... please wait
+[16:41:06] [Server thread/INFO]: [SpigotLibraryLoader] [GameModeInventories] Loaded library /var/server/libraries/com/zaxxer/HikariCP/5.0.1/HikariCP-5.0.1.jar
+[16:41:06] [Server thread/INFO]: [SpigotLibraryLoader] [GameModeInventories] Loaded library /var/server/libraries/org/slf4j/slf4j-api/2.0.0-alpha1/slf4j-api-2.0.0-alpha1.jar
+[16:41:06] [Server thread/INFO]: [ViaVersion] Loading server plugin ViaVersion v5.3.2
+[16:41:06] [Server thread/INFO]: [ViaVersion] ViaVersion 5.3.2 is now loaded. Registering protocol transformers and injecting...
+[16:41:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Loading block connection mappings ...
+[16:41:07] [Via-Mappingloader-0/INFO]: [ViaVersion] Using FastUtil Long2ObjectOpenHashMap for block connections
+[16:41:08] [Server thread/INFO]: [ViaBackwards] Loading translations...
+[16:41:08] [Server thread/ERROR]: [ViaVersion] Error initializing plugin 'ViaVersion-5.3.2.jar' in folder 'plugins' (Is it up to date?)
+java.lang.NoClassDefFoundError: com/viaversion/viaversion/rewriter/ComponentRewriter
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method) ~[?:?]
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1027) ~[?:?]
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:150) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.findClass(PluginClassLoader.java:243) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[?:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:169) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	at ViaBackwards-5.0.0-SNAPSHOT.jar/com.viaversion.viabackwards.api.ViaBackwardsPlatform.init(ViaBackwardsPlatform.java:91) ~[ViaBackwards-5.0.0-SNAPSHOT.jar:?]
+	at ViaBackwards-5.0.0-SNAPSHOT.jar/com.viaversion.viabackwards.BukkitPlugin.lambda$new$0(BukkitPlugin.java:38) ~[ViaBackwards-5.0.0-SNAPSHOT.jar:?]
+	at ViaVersion-5.3.2.jar/com.viaversion.viaversion.ViaManagerImpl.init(ViaManagerImpl.java:115) ~[ViaVersion-5.3.2.jar:?]
+	at ViaVersion-5.3.2.jar/com.viaversion.viaversion.ViaVersionPlugin.onLoad(ViaVersionPlugin.java:87) ~[ViaVersion-5.3.2.jar:?]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:59) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.storage.ServerPluginProviderStorage.processProvided(ServerPluginProviderStorage.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.storage.SimpleProviderStorage.enter(SimpleProviderStorage.java:39) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.entrypoint.LaunchEntryPointHandler.enter(LaunchEntryPointHandler.java:39) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.loadPlugins(CraftServer.java:564) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:277) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ClassNotFoundException: com.viaversion.viaversion.rewriter.ComponentRewriter
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass0(PluginClassLoader.java:197) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.java.PluginClassLoader.loadClass(PluginClassLoader.java:164) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[?:?]
+	... 21 more
+[16:41:08] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.4.102
+[16:41:09] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[16:41:09] [Server thread/INFO]: [ViaBackwards] Loading server plugin ViaBackwards v5.0.0-SNAPSHOT
+[16:41:09] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.3.3+6788-6359df8
+[16:41:10] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3de840f3]
+[16:41:10] [Server thread/INFO]: [Essentials] Loading server plugin Essentials v2.20.1
+[16:41:10] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[16:41:10] [Server thread/INFO]: [ViaRewind] Loading server plugin ViaRewind v4.0.1-SNAPSHOT
+[16:41:10] [Server thread/INFO]: [GriefPrevention] Loading server plugin GriefPrevention v16.18.4
+[16:41:10] [Server thread/INFO]: [FarmProtect] Loading server plugin FarmProtect v1.9.0
+[16:41:10] [Server thread/INFO]: [SLEEP] Loading server plugin Sleep v1.0.8
+[16:41:10] [Server thread/INFO]: [ChestSort] Loading server plugin ChestSort v14.1.0
+[16:41:10] [Server thread/INFO]: [PluginConstructorAPI] Loading server plugin PluginConstructorAPI v1.0.50
+[16:41:10] [Server thread/INFO]: [TPA] Loading server plugin TPA v1.0
+[16:41:10] [Server thread/INFO]: [CoordinatesHUD] Loading server plugin CoordinatesHud v1.0
+[16:41:10] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.2.0
+[16:41:10] [Server thread/INFO]: [DeadChest] Loading server plugin DeadChest v4.21.1
+[16:41:10] [Server thread/INFO]: [DeadChest] Worldguard support disabled by user
+[16:41:10] [Server thread/INFO]: [PlayerKits2] Loading server plugin PlayerKits2 v1.15.2
+[16:41:10] [Server thread/INFO]: [TradeShop] Loading server plugin TradeShop v2.6.1-STABLE
+[16:41:10] [Server thread/INFO]: [EssentialsChat] Loading server plugin EssentialsChat v2.20.1
+[16:41:10] [Server thread/INFO]: [DecentHolograms] Loading server plugin DecentHolograms v2.8.16
+[16:41:10] [Server thread/INFO]: [voicechat] Loading server plugin voicechat v2.5.30
+[16:41:10] [Server thread/INFO]: [PlayTime] Loading server plugin PlayTime v3.6
+[16:41:10] [Server thread/INFO]: [GSit] Loading server plugin GSit v2.3.1
+[16:41:10] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.6.3
+[16:41:10] [Server thread/INFO]: [GameModeInventories] Loading server plugin GameModeInventories v3.5.0
+[16:41:10] [Server thread/INFO]: [Colored Signs] Loading server plugin ColoredSigns v6.2.1.212
+[16:41:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[16:41:10] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.4.102
+[16:41:11] [Server thread/INFO]:         __    
+[16:41:11] [Server thread/INFO]:   |    |__)   LuckPerms v5.4.102
+[16:41:11] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[16:41:11] [Server thread/INFO]: 
+[16:41:11] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[16:41:11] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[16:41:13] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[16:41:13] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[16:41:13] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 3282ms)
+[16:41:13] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[16:41:13] [Server thread/INFO]: [Vault] [Economy] Essentials Economy found: Waiting
+[16:41:14] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[16:41:14] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[16:41:14] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[16:41:14] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.3.3+6788-6359df8
+[16:41:14] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[16:41:14] [Server thread/INFO]: WEPIF: Vault detected! Using Vault for permissions
+[16:41:14] [Server thread/WARN]: 
+**********************************************
+** This WorldEdit version does not fully support your version of Bukkit.
+**
+** When working with blocks or undoing, chests will be empty, signs
+** will be blank, and so on. There will be no support for entity
+** and block property-related functions.
+**
+** Please see https://worldedit.enginehub.org/en/latest/faq/#bukkit-adapters
+**********************************************
+
+[16:41:15] [Server thread/WARN]: Failed to load the built-in legacy id registry
+java.lang.ExceptionInInitializerError: null
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.NullPointerException: Cannot read the array length because "this.keyUniverse" is null
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	... 24 more
+[16:41:15] [Server thread/INFO]: [ViaRewind] Enabling ViaRewind v4.0.1-SNAPSHOT
+[16:41:15] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.6.3
+[16:41:17] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.4.
+[16:41:18] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[16:41:18] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.6.3]
+[16:41:18] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[16:41:18] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[16:41:18] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[16:41:18] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[16:41:18] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[16:41:18] [Server thread/INFO]: Preparing level "nasu vally"
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |------------------|
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     +==================+
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Version: 15.6.3
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     Commit: 7eb6dc6
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer]     This is the latest version!
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] ----------------------------------------------
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[16:41:18] [Folia Async Scheduler Thread #1/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[16:41:19] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[16:41:19] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:19] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:21] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:22] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:22] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:22] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:22] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:22] [Server thread/INFO]: Preparing spawn area: 4%
+[16:41:23] [Server thread/INFO]: Preparing spawn area: 4%
+[16:41:23] [Server thread/INFO]: Preparing spawn area: 9%
+[16:41:24] [Server thread/INFO]: Preparing spawn area: 69%
+[16:41:24] [Server thread/INFO]: Time elapsed: 5437 ms
+[16:41:24] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[16:41:24] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:25] [Server thread/INFO]: Preparing spawn area: 10%
+[16:41:26] [Server thread/INFO]: Preparing spawn area: 12%
+[16:41:26] [Server thread/INFO]: Preparing spawn area: 12%
+[16:41:26] [Server thread/INFO]: Preparing spawn area: 24%
+[16:41:27] [Server thread/INFO]: Preparing spawn area: 52%
+[16:41:27] [Server thread/INFO]: Time elapsed: 2891 ms
+[16:41:27] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[16:41:27] [Server thread/INFO]: Preparing spawn area: 0%
+[16:41:27] [Server thread/INFO]: Preparing spawn area: 22%
+[16:41:27] [Server thread/INFO]: Time elapsed: 530 ms
+[16:41:27] [Server thread/INFO]: [ViaVersion] Enabling ViaVersion v5.3.2
+[16:41:28] [Server thread/INFO]: [ViaVersion] ViaVersion detected server version: 1.21.4 (769)
+[16:41:28] [Server thread/INFO]: [ViaBackwards] Enabling ViaBackwards v5.0.0-SNAPSHOT
+[16:41:28] [Server thread/INFO]: [Essentials] Enabling Essentials v2.20.1
+[16:41:28] [Server thread/ERROR]: [Essentials] You are running an unsupported server version!
+[16:41:29] [Server thread/INFO]: [Essentials] Attempting to convert old kits in config.yml to new kits.yml
+[16:41:29] [Server thread/INFO]: [Essentials] No kits found to migrate.
+[16:41:29] [Server thread/INFO]: [Essentials] Loaded 39094 items from items.json.
+[16:41:29] [Server thread/INFO]: [Essentials] Using locale en
+[16:41:29] [Server thread/INFO]: [Essentials] ServerListPingEvent: Spigot iterator API
+[16:41:30] [Server thread/INFO]: [Essentials] Starting Metrics. Opt-out using the global bStats config.
+[16:41:30] [Server thread/INFO]: [Vault] [Economy] Essentials Economy hooked.
+[16:41:30] [Server thread/INFO]: [Essentials] Using Vault based permissions (LuckPerms)
+[16:41:30] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[16:41:30] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[16:41:30] [Server thread/INFO]: [GriefPrevention] Enabling GriefPrevention v16.18.4
+[16:41:30] [Server thread/INFO]: [GriefPrevention] Finished loading configuration.
+[16:41:30] [Server thread/INFO]: [GriefPrevention] 35 total claims loaded.
+[16:41:32] [Server thread/INFO]: [GriefPrevention] Customizable messages loaded.
+[16:41:32] [Server thread/INFO]: [GriefPrevention] Finished loading data (File Mode).
+[16:41:32] [Server thread/INFO]: [GriefPrevention] Boot finished.
+[16:41:32] [Server thread/INFO]: [FarmProtect] Enabling FarmProtect v1.9.0*
+[16:41:34] [Thread-15/INFO]: [FarmProtect] About to download a new update: FarmProtect v1.9.0
+[16:41:34] [Thread-15/INFO]: [FarmProtect] Downloading update: 60% of 42920 bytes.
+[16:41:34] [Thread-15/INFO]: [FarmProtect] Downloading update: 70% of 42920 bytes.
+[16:41:34] [Thread-15/INFO]: [FarmProtect] Downloading update: 100% of 42920 bytes.
+[16:41:34] [Thread-15/INFO]: [FarmProtect] Finished updating.
+[16:41:34] [Server thread/INFO]: [FarmProtect] Version 1.9.0 by jacklin213 has been Enabled!
+[16:41:34] [Server thread/INFO]: [SLEEP] Enabling Sleep v1.0.8
+[16:41:34] [Server thread/INFO]: [ChestSort] Enabling ChestSort v14.1.0
+[16:41:35] [Server thread/INFO]: [ChestSort] Use permissions: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Current sorting method: {category},{itemsFirst},{name},{color},{customName}
+[16:41:35] [Server thread/INFO]: [ChestSort] Allow automatic chest sorting:true
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Chest sorting enabled by default: false
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Sort time: close
+[16:41:35] [Server thread/INFO]: [ChestSort] Allow automatic inventory sorting:true
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Inventory sorting enabled by default: false
+[16:41:35] [Server thread/INFO]: [ChestSort] Auto generate category files: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Allow hotkeys: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Hotkeys enabled by default:
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Middle-Click: true
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Shift-Click: true
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Double-Click: true
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Shift-Right-Click: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Allow additional hotkeys: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Additional hotkeys enabled by default:
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Left-Click: false
+[16:41:35] [Server thread/INFO]: [ChestSort]   |- Right-Click: false
+[16:41:35] [Server thread/INFO]: [ChestSort] Check for updates: true
+[16:41:35] [Server thread/INFO]: [ChestSort] Check interval: 4 hours (4.0 seconds)
+[16:41:35] [Server thread/INFO]: [ChestSort] Categories: 900-weapons (6), 905-common-tools (4), 907-other-tools (6), 909-food (33), 910-valuables (47), 920-armor-and-arrows (9), 930-brewing (18), 950-redstone (23), 960-wood (60), 970-stone (38), 980-plants (50), 981-corals (1)
+[16:41:35] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: chestsort [14.1.0]
+[16:41:35] [Server thread/INFO]: [PluginConstructorAPI] Enabling PluginConstructorAPI v1.0.50
+[16:41:35] [Server thread/INFO]: [TPA] Enabling TPA v1.0*
+[16:41:35] [Server thread/INFO]: [CoordinatesHUD] Enabling CoordinatesHud v1.0
+[16:41:35] [Server thread/INFO]: [CoordinatesHUD] CoordinatesHUD Enabled
+[16:41:35] [Server thread/INFO]: [TAB] Enabling TAB v5.2.0
+[16:41:35] [Server thread/INFO]: [TAB] Loaded NMS hook in 29ms
+[16:41:35] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "customtagname" defined for group "_DEFAULT_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[16:41:35] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "abovename" defined for user "_NEZNAMY_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[16:41:35] [Server thread/INFO]: [TAB] [WARN] [users.yml] Unknown property "belowname" defined for user "_NEZNAMY_". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix, header, footer]
+[16:41:35] [Server thread/INFO]: [TAB] [WARN] Found a total of 3 issues.
+[16:41:35] [Server thread/INFO]: [TAB] Enabled in 617ms
+[16:41:35] [Server thread/INFO]: [DeadChest] Enabling DeadChest v4.21.1
+[16:41:36] [Server thread/INFO]: [PlayerKits2] Enabling PlayerKits2 v1.15.2
+[16:41:36] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: playerkits [1.15.2]
+[16:41:36] [Server thread/INFO]: [PlayerKits²] Has been enabled! Version: 1.15.2
+[16:41:36] [Server thread/INFO]: [PlayerKits²] Thanks for using my plugin!   ~Ajneb97
+[16:41:36] [Server thread/INFO]: There is a new version available. (1.17.4)
+[16:41:36] [Server thread/INFO]: You can download it at: https://modrinth.com/plugin/playerkits-2
+[16:41:36] [Server thread/INFO]: [TradeShop] Enabling TradeShop v2.6.1-STABLE
+[16:41:36] [Server thread/ERROR]: [TradeShop Debug - DATA_ERROR] FLATFILE Malformed Files Found: 0
+[16:41:36] [Server thread/ERROR]: [TradeShop Debug - DATA_ERROR] # of empty player files that couldn't be deleted: 0
+
+[16:41:36] [Server thread/INFO]: [TradeShop] Metrics successfully initialized!
+[16:41:36] [Server thread/INFO]: [EssentialsChat] Enabling EssentialsChat v2.20.1
+[16:41:36] [Thread-17/INFO]: [TradeShop] [Updater] You are running the latest version of the plugin!
+[16:41:36] [Server thread/INFO]: [EssentialsChat] Starting Metrics. Opt-out using the global bStats config.
+[16:41:36] [Server thread/INFO]: [DecentHolograms] Enabling DecentHolograms v2.8.16
+[16:41:37] [Server thread/INFO]: [NBTAPI] [NBTAPI] Found Minecraft: 1.21.4! Trying to find NMS support
+[16:41:37] [Server thread/INFO]: [NBTAPI] [NBTAPI] NMS support 'MC1_21_R3' loaded!
+[16:41:37] [Server thread/INFO]: [NBTAPI] [NBTAPI] Using the plugin 'DecentHolograms' to create a bStats instance!
+[16:41:37] [Server thread/INFO]: [voicechat] Enabling voicechat v2.5.30
+[16:41:37] [Server thread/INFO]: [voicechat] Initializing compatibility for version 1.21.4-R0.1
+[16:41:37] [Server thread/INFO]: [voicechat] Compatibility version 18
+[16:41:37] [Server thread/INFO]: [voicechat] Successfully initialized commodore command completion
+[16:41:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: voicechat [2.5.30]
+[16:41:37] [Server thread/INFO]: [voicechat] Successfully registered PlaceholderAPI expansion
+[16:41:37] [Server thread/INFO]: [voicechat] Successfully added ViaVersion mappings
+[16:41:37] [Server thread/INFO]: [PlayTime] Enabling PlayTime v3.6*
+[16:41:37] [Server thread/INFO]: [PlayTime] PlaceholderAPI was found! Registering Placeholders.
+[16:41:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: playtime [3.6]
+[16:41:37] [Server thread/INFO]: [GSit] Enabling GSit v2.3.1
+[16:41:37] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: gsit [2.3.1]
+[16:41:37] [Server thread/INFO]: [GSit] The plugin was successfully enabled.
+[16:41:37] [Server thread/INFO]: [GSit] Link with GriefPrevention successful!
+[16:41:37] [Server thread/INFO]: [GSit] Link with PlaceholderAPI successful!
+[16:41:37] [Server thread/INFO]: [GameModeInventories] Enabling GameModeInventories v3.5.0
+[16:41:37] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] GMISQLitePool - Starting...
+[16:41:37] [Server thread/INFO]: [com.zaxxer.hikari.pool.HikariPool] GMISQLitePool - Added connection org.sqlite.jdbc4.JDBC4Connection@5e431eee
+[16:41:37] [Server thread/INFO]: [com.zaxxer.hikari.HikariDataSource] GMISQLitePool - Start completed.
+[16:41:38] [Server thread/INFO]: [Colored Signs] Enabling ColoredSigns v6.2.1.212
+[16:41:38] [Server thread/INFO]: [spark] Starting background profiler...
+[16:41:39] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[16:41:39] [Server thread/INFO]: Done preparing level "nasu vally" (21.298s)
+[16:41:39] [Server thread/INFO]: Running delayed init tasks
+[16:41:39] [Craft Scheduler Thread - 5 - ViaVersion/INFO]: [ViaVersion] Finished mapping loading, shutting down loader executor.
+[16:41:39] [Craft Scheduler Thread - 6 - Essentials/INFO]: [Essentials] Fetching version information...
+[16:41:39] [Server thread/INFO]: [Essentials] Essentials found a compatible payment resolution method: Vault Compatibility Layer (v1.7.3-b131)!
+[16:41:39] [Craft Scheduler Thread - 11 - DecentHolograms/INFO]: [DecentHolograms] Loading holograms... 
+[16:41:39] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] Checking for Updates ... 
+[16:41:39] [Craft Scheduler Thread - 9 - Vault/INFO]: [Vault] No new version available
+[16:41:39] [Craft Scheduler Thread - 14 - PlayTime/INFO]: [PlayTime] Latest version is installed! - v3.6
+[16:41:39] [Craft Scheduler Thread - 13 - DecentHolograms/INFO]: 
+A newer version of DecentHolograms is available. Download it from: 
+- https://www.spigotmc.org/resources/96927/
+- https://modrinth.com/plugin/decentholograms
+[16:41:39] [Craft Scheduler Thread - 11 - DecentHolograms/INFO]: [DecentHolograms] Loaded 13 holograms!
+[16:41:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: griefprevention [1.7.0]
+[16:41:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.1]
+[16:41:39] [Server thread/WARN]: [PlaceholderAPI] Cannot load expansion playerstats due to a missing plugin: PlayerStats
+[16:41:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: playerlist [3.0.7]
+[16:41:39] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[16:41:39] [Server thread/INFO]: 4 placeholder hook(s) registered! 2 placeholder hook(s) have an update available.
+[16:41:39] [Server thread/INFO]: Done (69.983s)! For help, type "help"
+[16:41:39] [Server thread/INFO]: [voicechat] Loading plugins
+[16:41:39] [Server thread/INFO]: [voicechat] Loaded 0 plugin(s)
+[16:41:39] [Server thread/INFO]: [voicechat] Initializing plugins
+[16:41:39] [Server thread/INFO]: [voicechat] Initialized 0 plugin(s)
+[16:41:39] [Server thread/WARN]: [voicechat] Running in offline mode - Voice chat encryption is not secure!
+[16:41:40] [VoiceChatServerThread/INFO]: [voicechat] Voice chat server started at port 24454
+[16:41:40] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] There is a new EssentialsX version available for download: 2.21.0.
+[16:41:40] [Craft Scheduler Thread - 6 - Essentials/WARN]: [Essentials] Download it here: https://essentialsx.net/downloads.html?branch=stable
+[16:41:40] [Craft Scheduler Thread - 4 - PluginConstructorAPI/INFO]: Found a new version of PluginConstructorAPI: v1.1.53 downloading now!!
+[16:41:42] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 2650ms or 53 ticks behind
+[16:41:43] [Server thread/WARN]: [ChestSort] **************************************************
+[16:41:43] [Server thread/WARN]: [ChestSort] * There is a new version of ChestSort available!
+[16:41:43] [Server thread/WARN]: [ChestSort] *  
+[16:41:43] [Server thread/WARN]: [ChestSort] * Your version:   14.1.0
+[16:41:43] [Server thread/WARN]: [ChestSort] * Latest version: 14.2.0
+[16:41:43] [Server thread/WARN]: [ChestSort] *  
+[16:41:43] [Server thread/WARN]: [ChestSort] * Please update to the newest version.
+[16:41:43] [Server thread/WARN]: [ChestSort] *  
+[16:41:43] [Server thread/WARN]: [ChestSort] * Download:
+[16:41:43] [Server thread/WARN]: [ChestSort] *   https://www.chestsort.de
+[16:41:43] [Server thread/WARN]: [ChestSort] **************************************************
+[16:42:00] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3062ms or 61 ticks behind
+[16:42:13] [User Authenticator #0/INFO]: UUID of player nasu_chacha is e9e29ffd-e1e6-3448-bd19-e7d75dcd5a71
+[16:42:14] [Server thread/INFO]: nasu_chacha joined the game
+[16:42:14] [TAB Processing Thread/INFO]: [TAB] [WARN] Player nasu_chacha's group (gm) is not in sorting list! Sorting list: owner,admin,mod,helper,builder,vip,default. Player will be sorted on the bottom.
+[16:42:14] [Server thread/INFO]: nasu_chacha[/103.252.216.118:19973] logged in with entity id 1343 at ([nasu vally]-55.93005607000901, 67.0, 38.01583571640743)
+[16:42:15] [Server thread/INFO]: [voicechat] Received secret request of nasu_chacha (18)
+[16:42:15] [Server thread/INFO]: [voicechat] Sent secret to nasu_chacha
+[16:42:27] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:481) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1939) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:45) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:10) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:118) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1561) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1251) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:42:49] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.level.ServerPlayerGameMode.useItemOn(ServerPlayerGameMode.java:481) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleUseItemOn(ServerGamePacketListenerImpl.java:1939) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:45) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundUseItemOnPacket.handle(ServerboundUseItemOnPacket.java:10) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:118) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1561) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1251) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:43:06] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:559) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:554) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.level.ServerPlayerGameMode.handleBlockBreakAction(ServerPlayerGameMode.java:181) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handlePlayerAction(ServerGamePacketListenerImpl.java:1855) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:51) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:10) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:118) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1561) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1251) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:43:14] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:559) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:554) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.level.ServerPlayerGameMode.handleBlockBreakAction(ServerPlayerGameMode.java:181) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handlePlayerAction(ServerGamePacketListenerImpl.java:1855) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:51) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:10) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1379) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1387) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1264) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:43:14] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:559) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:554) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.level.ServerPlayerGameMode.handleBlockBreakAction(ServerPlayerGameMode.java:181) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handlePlayerAction(ServerGamePacketListenerImpl.java:1855) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:51) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundPlayerActionPacket.handle(ServerboundPlayerActionPacket.java:10) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:139) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.managedBlock(MinecraftServer.java:1379) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1387) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1264) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:43:57] [Server thread/ERROR]: Could not pass event PlayerInteractEvent to WorldEdit v7.3.3+6788-6359df8
+java.lang.NoClassDefFoundError: Could not initialize class com.sk89q.worldedit.bukkit.BukkitAdapter
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitPlayer.getWorld(BukkitPlayer.java:182) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditListener.onPlayerInteract(WorldEditListener.java:118) ~[worldedit-bukkit-7.3.3.jar:?]
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:603) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:559) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:554) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.event.CraftEventFactory.callPlayerInteractEvent(CraftEventFactory.java:550) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.handleAnimate(ServerGamePacketListenerImpl.java:2559) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundSwingPacket.handle(ServerboundSwingPacket.java:34) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.game.ServerboundSwingPacket.handle(ServerboundSwingPacket.java:9) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:29) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.TickTask.run(TickTask.java:18) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:155) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1448) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:176) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:129) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1428) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1422) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:118) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1561) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1251) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NullPointerException [in thread "Server thread"]
+	at java.base/java.util.EnumMap.<init>(EnumMap.java:139) ~[?:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.BukkitAdapter.<clinit>(BukkitAdapter.java:362) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.lambda$initializeRegistries$0(WorldEditPlugin.java:228) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.computeDefaultState(BlockType.java:92) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.util.concurrency.LazyReference.getValue(LazyReference.java:83) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.block.BlockType.getDefaultState(BlockType.java:169) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseLogic(DefaultBlockParser.java:391) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:98) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.extension.factory.parser.DefaultBlockParser.parseFromInput(DefaultBlockParser.java:68) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.internal.registry.AbstractFactory.parseFromInput(AbstractFactory.java:77) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.loadFromResource(LegacyMapper.java:117) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.<init>(LegacyMapper.java:70) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.world.registry.LegacyMapper.getInstance(LegacyMapper.java:191) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.WorldEdit.loadMappings(WorldEdit.java:409) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.setupPreWorldData(WorldEditPlugin.java:197) ~[worldedit-bukkit-7.3.3.jar:?]
+	at worldedit-bukkit-7.3.3.jar/com.sk89q.worldedit.bukkit.WorldEditPlugin.onEnable(WorldEditPlugin.java:175) ~[worldedit-bukkit-7.3.3.jar:?]
+	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:280) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:202) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:109) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:520) ~[paper-api-1.21.4-R0.1-SNAPSHOT.jar:?]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugin(CraftServer.java:658) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at org.bukkit.craftbukkit.CraftServer.enablePlugins(CraftServer.java:607) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:278) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1163) ~[paper-1.21.4.jar:1.21.4-228-c2bb144]
+	... 2 more
+[16:44:14] [Server thread/INFO]: Stopping server
+[16:44:14] [Server thread/INFO]: [Colored Signs] Disabling ColoredSigns v6.2.1.212
+[16:44:14] [Server thread/INFO]: &cColored Signs is now disabled!
+[16:44:14] [Server thread/INFO]: [GameModeInventories] Disabling GameModeInventories v3.5.0
+[16:44:14] [Server thread/INFO]: [SkinsRestorer] Disabling SkinsRestorer v15.6.3
+[16:44:14] [Server thread/INFO]: [GSit] Disabling GSit v2.3.1
+[16:44:14] [Server thread/INFO]: [GSit] The plugin was successfully disabled.
+[16:44:14] [Server thread/INFO]: [PlayTime] Disabling PlayTime v3.6
+[16:44:14] [Server thread/INFO]: [voicechat] Disabling voicechat v2.5.30
+[16:44:14] [Server thread/INFO]: [DecentHolograms] Disabling DecentHolograms v2.8.16
+[16:44:14] [Server thread/INFO]: [EssentialsChat] Disabling EssentialsChat v2.20.1
+[16:44:14] [Server thread/INFO]: [TradeShop] Disabling TradeShop v2.6.1-STABLE
+[16:44:14] [Server thread/INFO]: [PlayerKits2] Disabling PlayerKits2 v1.15.2
+[16:44:14] [Server thread/INFO]: [PlayerKits²] Has been disabled! Version: 1.15.2
+[16:44:14] [Server thread/INFO]: [DeadChest] Disabling DeadChest v4.21.1
+[16:44:14] [Server thread/INFO]: [TAB] Disabling TAB v5.2.0
+[16:44:14] [Server thread/INFO]: [TAB] Disabled in 3ms
+[16:44:14] [Server thread/INFO]: [CoordinatesHUD] Disabling CoordinatesHud v1.0
+[16:44:14] [Server thread/INFO]: [CoordinatesHUD] CoordinatesHUD Disabled
+[16:44:14] [Server thread/INFO]: [TPA] Disabling TPA v1.0
+[16:44:14] [Server thread/INFO]: [PluginConstructorAPI] Disabling PluginConstructorAPI v1.0.50
+[16:44:14] [Server thread/INFO]: [ChestSort] Disabling ChestSort v14.1.0
+[16:44:14] [Server thread/INFO]: [SLEEP] Disabling Sleep v1.0.8
+[16:44:14] [Server thread/INFO]: [FarmProtect] Disabling FarmProtect v1.9.0
+[16:44:14] [Server thread/INFO]: [GriefPrevention] Disabling GriefPrevention v16.18.4
+[16:44:14] [Server thread/INFO]: [PlaceholderAPI] Unregistered placeholder expansion griefprevention
+[16:44:14] [Server thread/INFO]: [PlaceholderAPI] Reason: required plugin GriefPrevention was disabled.
+[16:44:14] [Server thread/INFO]: [GriefPrevention] GriefPrevention disabled.
+[16:44:14] [Server thread/INFO]: [ViaRewind] Disabling ViaRewind v4.0.1-SNAPSHOT
+[16:44:14] [Server thread/INFO]: [PlaceholderAPI] Disabling PlaceholderAPI v2.11.6
+[16:44:14] [Server thread/INFO]: [Essentials] Disabling Essentials v2.20.1
+[16:44:14] [Server thread/INFO]: [Vault] [Economy] Essentials Economy unhooked.
+[16:44:14] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.3.3+6788-6359df8
+[16:44:14] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[16:44:14] [Server thread/INFO]: [ViaBackwards] Disabling ViaBackwards v5.0.0-SNAPSHOT
+[16:44:14] [Server thread/INFO]: [Vault] Disabling Vault v1.7.3-b131
+[16:44:14] [Server thread/INFO]: [LuckPerms] Disabling LuckPerms v5.4.102
+[16:44:14] [Server thread/INFO]: [LuckPerms] Starting shutdown process...
+[16:44:14] [Server thread/INFO]: [LuckPerms] Closing storage...
+[16:44:15] [Server thread/INFO]: [LuckPerms] Goodbye!
+[16:44:15] [Server thread/INFO]: [ViaVersion] Disabling ViaVersion v5.3.2
+[16:44:15] [Server thread/INFO]: [ViaVersion] ViaVersion has been disabled; uninjected the platform and shut down the scheduler.
+[16:44:15] [Server thread/INFO]: Saving players
+[16:44:15] [Server thread/INFO]: nasu_chacha lost connection: Server closed
+[16:44:15] [Server thread/INFO]: nasu_chacha left the game
+[16:44:15] [Server thread/INFO]: Saving worlds
+[16:44:15] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nasu vally]'/minecraft:overworld
+[16:44:16] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'nasu vally'
+[16:44:16] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'nasu vally'
+[16:44:16] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'nasu vally'
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Saved 800 block chunks, 800 entity chunks, 0 poi chunks in world 'nasu vally' in 3.60s
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'nasu vally'
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'nasu vally'
+[16:44:20] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nasu vally_nether]'/minecraft:the_nether
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'nasu vally_nether'
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'nasu vally_nether'
+[16:44:20] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'nasu vally_nether'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Saved 361 block chunks, 361 entity chunks, 0 poi chunks in world 'nasu vally_nether' in 1.07s
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'nasu vally_nether'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'nasu vally_nether'
+[16:44:21] [Server thread/INFO]: Saving chunks for level 'ServerLevel[nasu vally_the_end]'/minecraft:the_end
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'nasu vally_the_end'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'nasu vally_the_end'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'nasu vally_the_end'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Saved 361 block chunks, 361 entity chunks, 0 poi chunks in world 'nasu vally_the_end' in 0.21s
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk I/O to halt for world 'nasu vally_the_end'
+[16:44:21] [Server thread/INFO]: [ChunkHolderManager] Halted I/O scheduler for world 'nasu vally_the_end'
+[16:44:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (nasu vally): All chunks are saved
+[16:44:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[16:44:21] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[16:44:21] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[16:44:21] [Server thread/INFO]: Waiting for I/O tasks to complete...
+[16:44:21] [Server thread/INFO]: All I/O tasks to complete
+[16:44:21] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of worker pool for up to 60s...
+[16:44:21] [Server thread/INFO]: [MoonriseCommon] Awaiting termination of I/O pool for up to 60s...

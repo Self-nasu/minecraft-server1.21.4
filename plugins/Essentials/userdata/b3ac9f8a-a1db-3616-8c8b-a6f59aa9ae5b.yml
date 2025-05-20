@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 122.162.113.69
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1747672685956
+  login: 1747670159634
+money: '0'
+last-account-name: Priyank_D
+logoutlocation:
+  world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
+  world-name: nasu vally
+  x: -6.012451787158078
+  y: 67.0
+  z: 88.56428341742952
+  yaw: 59.54975509643555
+  pitch: 24.0000057220459

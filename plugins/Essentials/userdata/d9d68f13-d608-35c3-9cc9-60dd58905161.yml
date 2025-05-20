@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 122.162.113.69
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1746959850836
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1747756820393
+  login: 1747753694839
+money: '0'
+last-account-name: PuneetD
+logoutlocation:
+  world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
+  world-name: nasu vally
+  x: -106.90665817091184
+  y: 34.0
+  z: -10.237500011920929
+  yaw: -9.529815673828125
+  pitch: -6.48524284362793
+lastlocation:
+  world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
+  world-name: nasu vally
+  x: 13.030643278889535
+  y: 73.0625
+  z: -468.87399995594694
+  yaw: -160.67694091796875
+  pitch: -12.110241889953613
