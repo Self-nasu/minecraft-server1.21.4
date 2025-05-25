@@ -3,7 +3,7 @@ teleportauto: false
 godmode: false
 muted: false
 jailed: false
-ip-address: 223.185.13.217
+ip-address: 223.185.14.196
 afk: false
 socialspy: false
 npc: false
@@ -16,23 +16,23 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1747676349959
-  login: 1747676023859
+  logout: 1748076436716
+  login: 1748075912216
 money: '0'
 last-account-name: Festerrr
 lastlocation:
   world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
   world-name: nasu vally
-  x: 589.043396844287
-  y: 68.0
-  z: -555.7653473210328
-  yaw: -11.689971923828125
-  pitch: 11.839502334594727
+  x: 13.5685367943573
+  y: 73.0
+  z: -467.5284810775424
+  yaw: 176.59893798828125
+  pitch: -6.1816792488098145
 logoutlocation:
   world: 8d897fc4-489d-452d-8dd1-f3c53a5aef5d
   world-name: nasu vally
-  x: -88.0163019305701
+  x: -89.62568574859297
   y: 74.0
-  z: 64.6554528137993
-  yaw: -107.55001831054688
-  pitch: 28.604995727539062
+  z: 65.73735008219415
+  yaw: -45.4869384765625
+  pitch: 12.15385913848877
